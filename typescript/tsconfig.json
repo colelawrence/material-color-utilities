@@ -4,6 +4,7 @@
     "target": "ES6",
     "lib": ["es2017", "dom", "dom.iterable"],
     "declaration": true,
+    "declarationMap": true,
     "outDir": "./dist",
     "strict": true,
     "noUnusedLocals": false,
