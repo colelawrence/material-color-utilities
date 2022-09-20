@@ -1,31 +1,23 @@
 {
-    "compilerOptions": {
-        "module": "esnext",
-        "target": "ES2017",
-        "lib": [
-            "es2017",
-            "dom",
-            "dom.iterable"
-        ],
-        "declaration": true,
-        "emitDeclarationOnly": true,
-        "outDir": "./types",
-        "strict": true,
-        "noUnusedLocals": false,
-        "skipLibCheck": true,
-        "noUnusedParameters": false,
-        "noImplicitReturns": true,
-        "noFallthroughCasesInSwitch": true,
-        "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true,
-        "experimentalDecorators": true,
-        "forceConsistentCasingInFileNames": true
-    },
-    "include": [
-        "**/*.ts"
-    ],
-    "exclude": [
-        "node_modules",
-        "types",
-    ]
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES6",
+    "lib": ["es2017", "dom", "dom.iterable"],
+    "declaration": true,
+    "outDir": "./dist",
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": false,
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["dist", "**/*.d.ts", "**/*_test.ts", "utils/test_utils.ts"]
 }
