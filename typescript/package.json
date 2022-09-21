@@ -10,9 +10,12 @@
     "color extraction",
     "theming"
   ],
-  "types": "./dist/index.d.ts",
+  "types": "./cjs/index.d.ts",
   "exports": {
-    ".": "./dist/index.js"
+    ".": {
+      "import": "./esm/index.js",
+      "require": "./cjs/index.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -27,8 +30,8 @@
   "homepage": "https://github.com/material-foundation/material-color-utilities/tree/main/typescript",
   "scripts": {
     "postinstall": "npm run build",
-    "remove-build": "rm -rf dist",
-    "build": "npm run remove-build && tsc",
+    "remove-build": "rm -rf cjs esm",
+    "build": "npm run remove-build && tsc && tsc -p tsconfig.esm.json",
     "watch": "tsc -w",
     "prepublishOnly": "npm run build"
   },

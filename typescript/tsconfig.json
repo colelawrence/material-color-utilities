@@ -5,7 +5,7 @@
     "lib": ["es2017", "dom", "dom.iterable"],
     "declaration": true,
     "declarationMap": true,
-    "outDir": "./dist",
+    "outDir": "./cjs",
     "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,

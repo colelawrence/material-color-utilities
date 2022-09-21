@@ -30,5 +30,6 @@ build/
 
 # TS related
 node_modules
-typescript/dist
+typescript/cjs
+typescript/esm
 *.d.ts

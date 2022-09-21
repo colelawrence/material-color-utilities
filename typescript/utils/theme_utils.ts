@@ -170,7 +170,7 @@ export function applyTheme(theme: Theme, options?: {
     for (const [key, palette] of Object.entries(theme.palettes)) {
       const paletteKey = key.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
       for (const tone of tones) {
-        const token = `--md-ref-palette-${paletteKey}${tone}`;
+        const token = `--ap-ref-palette-${paletteKey}${tone}`;
         const color = hexFromArgb(palette.tone(tone));
         target.style.setProperty(token, color);
       }
@@ -186,6 +186,6 @@ function setSchemeProperties(
   for (const [key, value] of Object.entries(scheme.toJSON())) {
     const token = key.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
     const color = hexFromArgb(value);
-    target.style.setProperty(`--md-sys-color-${token}${suffix}`, color);
+    target.style.setProperty(`--ap-sys-color-${token}${suffix}`, color);
   }
 }
