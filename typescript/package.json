@@ -1,5 +1,5 @@
 {
-  "name": "@material/material-color-utilities",
+  "name": "@artprompt/material-color-utilities",
   "version": "0.2.0",
   "description": "Algorithms and utilities that power the Material Design 3 (M3) color system, including choosing theme colors from images and creating tones of colors; all in a new color space.",
   "keywords": [
@@ -19,15 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/material-foundation/material-color-utilities.git",
+    "url": "https://github.com/colelawrence/material-color-utilities.git",
     "directory": "typescript"
   },
   "author": "Material Eng",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/material-foundation/material-color-utilities/issues"
+    "url": "https://github.com/colelawrence/material-color-utilities/issues"
   },
-  "homepage": "https://github.com/material-foundation/material-color-utilities/tree/main/typescript",
+  "homepage": "https://github.com/colelawrence/material-color-utilities/tree/main/typescript",
   "scripts": {
     "postinstall": "npm run build",
     "remove-build": "rm -rf cjs esm",
