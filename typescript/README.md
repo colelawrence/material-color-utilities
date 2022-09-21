@@ -1,6 +1,6 @@
 # material-color-utilities
 
-[![npm package](https://badgen.net/npm/v/@material/material-color-utilities)](https://npmjs.com/package/@material/material-color-utilities)
+[![npm package](https://badgen.net/npm/v/@artprompt/material-color-utilities)](https://npmjs.com/package/@artprompt/material-color-utilities)
 
 Algorithms and utilities that power the Material Design 3 (M3) color system,
 including choosing theme colors from images and creating tones of colors; all in
@@ -12,10 +12,10 @@ for more information.
 
 ## Getting started
 
-`npm i @material/material-color-utilities` or `yarn add @material/material-color-utilities`
+`npm i @artprompt/material-color-utilities` or `yarn add @artprompt/material-color-utilities`
 
 ```typescript
-import { HCT } from "@material/material-color-utilities";
+import { HCT } from "@artprompt/material-color-utilities";
 
 // Simple demonstration of HCT.
 const color = HCT.fromInt(0xff4285f4);
@@ -28,7 +28,7 @@ console.log(`Tone: ${color.tone}`);
 ### Theming
 
 ```typescript
-import { argbFromHex, themeFromSourceColor, applyTheme } from "@material/material-color-utilities";
+import { argbFromHex, themeFromSourceColor, applyTheme } from "@artprompt/material-color-utilities";
 
 // Get the theme from a hex color
 const theme = themeFromSourceColor(argbFromHex('#f82506'), [
